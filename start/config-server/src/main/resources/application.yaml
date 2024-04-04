@@ -1,0 +1,30 @@
+server:
+  port: 8888
+
+spring:
+  application:
+    name: config-server
+  profiles:
+    active: git
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/ryanjbaxter/beginners-guide-to-spring-cloud
+          searchPaths: beginners-guide-to-spring-cloud-config
+          force-pull: true
+
+security:
+  basic:
+    enabled: false
+
+management:
+  security:
+    enabled: false
+
+eureka:
+  client:
+    fetch-registry: true
+    register-with-eureka: true
+    service-url:
+      defaultZone: http://localhost:8761/eureka
