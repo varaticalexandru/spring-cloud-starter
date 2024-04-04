@@ -12,6 +12,7 @@ spring:
         git:
           uri: https://github.com/varaticalexandru/spring-cloud-starter
           searchPaths: config
+          force-pull: true
 
 security:
   basic:
