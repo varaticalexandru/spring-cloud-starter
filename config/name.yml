@@ -1,0 +1,18 @@
+server:
+  port: 7070
+  
+name: Ryan
+names:
+  - Baxter
+  - Dave
+  - Spencer
+  - Jon
+  - Marcin
+  - Adrian
+
+eureka:
+  client:
+    fetch-registry: true
+    register-with-eureka: true
+    service-url:
+      defaultZone: http://localhost:8761/eureka
